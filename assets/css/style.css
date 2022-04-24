@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: 'robot';
+    font-style: normal;
+    font-weight: 100!important;
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('ttf')
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: 'marcellus';
+    font-style: normal;
+    font-weight: 100!important;
+    src: url('../fonts/');
+    src: url('../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf') format('ttf')
+}
+.pointer{
+    cursor: pointer;
+}
+
+
+
