@@ -11,8 +11,8 @@
     font-family: 'marcellus';
     font-style: normal;
     font-weight: 100!important;
-    src: url('../fonts/');
-    src: url('../fonts/Cormorant_Garamond/CormorantGaramond-Medium.ttf') format('ttf')
+    src: url('../fonts/Marcellus/Marcellus-Regular.ttf');
+    src: url('../fonts/Marcellus/Marcellus-Regular.ttf') format('ttf')
 }
 .pointer{
     cursor: pointer;
