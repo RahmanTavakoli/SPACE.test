@@ -56,11 +56,11 @@
     })();
 
     $(document).ready(function () {
-        
+
         //Destination info
         $("#moon").click(function () {
             $(".destination-moon-info").toggle(200); //toggle corrent category
-            $("#moon-img").toggle(200);//toggle corrent category's img
+            $("#moon-img").toggle(200); //toggle corrent category's img
             $("#moon").toggleClass('active'); //show border bottom
             $("#mars-img ,.destination-mars-info ,#europa-img ,.destination-europa-info ,#titan-img ,.destination-titan-info").addClass('d-none'); //remove other category
             $(".destination-moon-info ,#moon-img").removeClass('d-none'); //show corrent category
@@ -93,4 +93,19 @@
             $(".destination-titan-info ,#titan-img").removeClass('d-none');
             $("#mars ,#europa ,#moon").removeClass('active'); //remove border bottom
         });
+    });
+
+    //crew-swiper
+    var swiper = new Swiper(".mySwiper", {
+        speed: 1200,
+        items: 4,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
     });
