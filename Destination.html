@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <section class="destination-hero">
+    <section class="destination-hero overflow-hidden">
         <div class="navbar-space">
             <nav class="navbar navbar-expand-lg d-flex justify-content-between ">
                 <a href="#" class=" mt-lg-5 ms-5">
@@ -32,9 +32,9 @@
                     </div>
                     <!-- md & ls navbar -->
                     <div class="navbar-content d-none d-md-block">
-                        <a class=" active text-uppercase" aria-current="page" href="#"><span class="fw-bold">00</span>
+                        <a class=" text-uppercase" aria-current="page" href="#"><span class="fw-bold">00</span>
                             Home</a>
-                        <a class=" text-uppercase" href="#"><span class="fw-bold">01</span> destination</a>
+                        <a class=" text-uppercase  active" href="#"><span class="fw-bold ">01</span> destination</a>
                         <a class="text-uppercase" href="#"><span class="fw-bold">02</span> crew</a>
                         <a class=" text-uppercase" href="#"><span class="fw-bold">03</span> Technology</a>
                     </div>
@@ -56,38 +56,111 @@
             </nav>
         </div>
         <section class="row">
-            <div class="col-lg-6">
-                <div class="h-100 d-inline-block d-flex justify-content-center align-items-center">
+            <div class="col-md-6">
+                <div class="h-100 d-inline-block d-flex justify-content-center align-items-center destination-content">
                     <div>
-                        <h1 class="destination-title text-uppercase text-white mb-5"><span class="text-white opacity-25">01
-                        </span>pick your destination </h1>
-                    <img src="assets/images/image-mars.png" class="img-fluid mt-5 ms-5" alt="">
+                        <h2 class="destination-title text-uppercase text-white mb-5"><span
+                                class="text-white opacity-25">01
+                            </span>pick your destination </h2>
+                        <!-- moon -->
+                        <img src="assets/images/image-moon.png" class="img-fluid mt-5 ms-5" id="moon-img" alt="">
+                        <!-- mars -->
+                        <img src="assets/images/image-mars.png" class="img-fluid mt-5 ms-5" id="mars-img" alt="">
+                        <!-- europa -->
+                        <img src="assets/images/image-europa.png" class="img-fluid mt-5 ms-5" id="europa-img" alt="">
+                        <!-- titan -->
+                        <img src="assets/images/image-titan.png" class="img-fluid mt-5 ms-5" id="titan-img" alt="">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6">
-                <div class="btn-group">
-                    <button class="btn bg-transparent text-uppercase text-white">moon</button>
-                    <button class="btn bg-transparent text-uppercase text-white">mars</button>
-                    <button class="btn bg-transparent text-uppercase text-white">europa</button>
-                    <button class="btn bg-transparent text-uppercase text-white">titan</button>
-                </div>
-                <div class="destination-moon">
-                    <h1 class="text-white text-uppercase space-title">mars</h1>
-                    <p class="hero-text-L2 text-white text-capitalize opacity-75">dont forget to pack your hiking boots.
-                        you'll need them to tackle Olymus mons. the tallest planetary mountain in our solar system. it's
-                        two and a half times the sizes of Everest!</p>
-                    <div class="line"></div>
-                    <div class="d-flex text-white">
-                        <div class="me-5">
-                            <p class="text-uppercase">svg.distance</p>
-                            <h1 class="distance-count">225 MIL.KM</h1>
-                        </div>
-                        <div>
-                            <p class="text-uppercase">est.travel time</p>
-                            <h1 class="distance-count">9 MONTHS</h1>
+            <div class="col-md-6">
+                <div class="destination-information">
+                    <div class="btn-group destination-category">
+                        <button id="moon" class="btn bg-transparent text-uppercase text-white active">moon</button>
+                        <button id="mars" class="btn bg-transparent text-uppercase text-white">mars</button>
+                        <button id="europa" class="btn bg-transparent text-uppercase text-white">europa</button>
+                        <button id="titan" class="btn bg-transparent text-uppercase text-white">titan</button>
+                    </div>
+                    <!-- moon-info -->
+                    <div class="destination-moon-info">
+                        <h1 class="text-white text-uppercase detination-main-title">moon</h1>
+                        <p class="hero-text-L2 text-white opacity-75">Dont forget to pack your hiking boots.
+                            you'll need them to tackle Olymus mons. the tallest planetary mountain in our solar system.
+                            it's
+                            two and a half times the sizes of Everest!</p>
+                        <div class="line"></div>
+                        <div class="d-flex text-white">
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">svg.distance</p>
+                                <h2>225 MIL.KM</h2>
+                            </div>
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">est.travel time</p>
+                                <h2>9 MONTHS</h2>
+                            </div>
                         </div>
                     </div>
+                    <!-- moon-info -->
+                    <!-- mars-info -->
+                    <div class="destination-mars-info ">
+                        <h1 class="text-white text-uppercase detination-main-title">mars</h1>
+                        <p class="hero-text-L2 text-white opacity-75">Dont forget to pack your hiking boots.
+                            you'll need them to tackle Olymus mons. the tallest planetary mountain in our solar system.
+                            it's
+                            two and a half times the sizes of Everest!</p>
+                        <div class="line"></div>
+                        <div class="d-flex text-white">
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">svg.distance</p>
+                                <h2>105 MIL.KM</h2>
+                            </div>
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">est.travel time</p>
+                                <h2>3 MONTHS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mars-info -->
+                    <!-- europa-info -->
+                    <div class="destination-europa-info">
+                        <h1 class="text-white text-uppercase detination-main-title">europa</h1>
+                        <p class="hero-text-L2 text-white opacity-75">Dont forget to pack your hiking boots.
+                            you'll need them to tackle Olymus mons. the tallest planetary mountain in our solar system.
+                            it's
+                            two and a half times the sizes of Everest!</p>
+                        <div class="line"></div>
+                        <div class="d-flex text-white">
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">svg.distance</p>
+                                <h2>993 MIL.KM</h2>
+                            </div>
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">est.travel time</p>
+                                <h2>29 MONTHS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- europa-info -->
+                    <!-- titan-info -->
+                    <div class="destination-titan-info">
+                        <h1 class="text-white text-uppercase detination-main-title">titan</h1>
+                        <p class="hero-text-L2 text-white opacity-75">Dont forget to pack your hiking boots.
+                            you'll need them to tackle Olymus mons. the tallest planetary mountain in our solar system.
+                            it's
+                            two and a half times the sizes of Everest!</p>
+                        <div class="line"></div>
+                        <div class="d-flex text-white">
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">svg.distance</p>
+                                <h2>1404 MIL.KM</h2>
+                            </div>
+                            <div class="me-5 distance-count-time">
+                                <p class="text-uppercase">est.travel time</p>
+                                <h2>33 MONTHS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- titan-info -->
                 </div>
             </div>
         </section>
